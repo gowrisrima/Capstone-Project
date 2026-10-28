@@ -1,0 +1,67 @@
+
+CUSTOMERS shape=(1200, 5)
+Dtypes:
+customer_id     object
+city            object
+signup_date     object
+age            float64
+gender          object
+Missing values:
+             count  percent
+customer_id      0     0.00
+city             0     0.00
+signup_date      0     0.00
+age             61     5.08
+gender          30     2.50
+
+
+PRODUCTS shape=(40, 4)
+Dtypes:
+product_id      object
+product_name    object
+category        object
+price_inr        int64
+Missing values:
+              count  percent
+product_id        0      0.0
+product_name      0      0.0
+category          0      0.0
+price_inr         0      0.0
+
+
+ORDERS shape=(13084, 9)
+Dtypes:
+order_id             object
+customer_id          object
+product_id           object
+quantity              int64
+order_ts             object
+status               object
+discount_pct          int64
+order_amount         object
+delivery_minutes    float64
+Missing values:
+                  count  percent
+order_id              0     0.00
+customer_id           0     0.00
+product_id            0     0.00
+quantity              0     0.00
+order_ts              0     0.00
+status                0     0.00
+discount_pct          0     0.00
+order_amount         53     0.41
+delivery_minutes   2541    19.42
+
+AUDIT CHECKPOINTS
+raw order rows: 13084
+exact duplicate order rows: 119
+pending rows: 656
+distinct order ids: 12309
+non-numeric order amounts: 120
+negative delivery minutes: 106
+blank delivery minutes: 2541
+blank ages: 61
+ages outside 10 to 100: 6
+distinct raw city spellings: 24
+distinct nonblank gender spellings: 10
+blank genders: 30
